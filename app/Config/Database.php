@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => 'root',
-        'database' => 'simasjid2',
+        'database' => 'simaskara',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SI Masjid |
+  <title>SIMaskara |
     <?= $judul ?>
   </title>
 
@@ -25,7 +25,7 @@
     <div class="card card-outline card-success">
       <div class="card-header text-center">
         <i class="fas fa-mosque fa-3x text-success"></i><br>
-        <a href="<?= base_url("Home") ?>" class="h1"><b>SI Masjid</b></a>
+        <a href="<?= base_url("Home") ?>" class="h1"><b>SIMaskara</b></a>
       </div>
       <div class="card-body">
         <p class="login-box-msg">Silahkan Login</p>
