@@ -7,6 +7,12 @@ use CodeIgniter\Session\Handlers\FileHandler;
 
 class App extends BaseConfig
 {
+    public function __construct()
+    {
+        parent::__construct();
+        // Pull base URL from .env when provided so asset links follow the current host.
+        $this->baseURL = env('app.baseURL', $this->baseURL);
+    }
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
@@ -17,7 +23,8 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://simasjid2.test';
+    // Will be filled in constructor to allow env() usage without constant-expression error.
+    public string $baseURL = 'http://localhost:8080/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
